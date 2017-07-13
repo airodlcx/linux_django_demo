@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {%autoescape on%}
+    {{ string }}
+    {%endautoescape%}
+    {% for i in TutorialList %}
+    {{ i }}
+    {% endfor %}
+    站点：{{ info_dict.site }} 内容：{{ info_dict.content }}
+    {% for key, value in info_dict.items %}
+        {{ key }}: {{ value }}
+    {% endfor %}
+    <br>
+    {% for item in List %}
+        {{ item }}{%if not forloop.last%},{%endif%}
+    {% endfor %}
+</body>
+</html>

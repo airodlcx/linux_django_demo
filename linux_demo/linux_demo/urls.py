@@ -18,6 +18,7 @@ from django.contrib import admin
 import books.views as books_view
 import clac.views as clac_views
 import learn.views as learn_views
+import templates_demo.views as template_views
 
 admin.autodiscover()
 
@@ -28,5 +29,8 @@ urlpatterns = [
     # url(r'^new_add/(\d+)/(\d+)/$',clac_views.add2,name='add2'),
     # url(r'^add/(\d+)/(\d+)/$',clac_views.old_add2_redirect)
 
-    url(r'^$',learn_views.home,name='home')
+    # url(r'^$',learn_views.home,name='home')
+
+    url(r'^$',template_views.home,name='home')
+
 ]

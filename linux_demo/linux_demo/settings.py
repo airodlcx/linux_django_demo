@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'books',
     'clac',
-    'learn'
+    'learn',
+    'templates_demo'
 ]
 
 MIDDLEWARE = [
