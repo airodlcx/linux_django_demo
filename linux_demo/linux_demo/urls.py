@@ -19,6 +19,8 @@ import books.views as books_view
 import clac.views as clac_views
 import learn.views as learn_views
 import templates_demo.views as template_views
+import blog.views as blog_views
+
 
 admin.autodiscover()
 
@@ -30,7 +32,8 @@ urlpatterns = [
     # url(r'^add/(\d+)/(\d+)/$',clac_views.old_add2_redirect)
 
     # url(r'^$',learn_views.home,name='home')
-
+    url(r'^blog_home/$', blog_views.index),
+    url(r'^blog_columns/$', blog_views.columns),
     url(r'^$',template_views.home,name='home')
 
 ]

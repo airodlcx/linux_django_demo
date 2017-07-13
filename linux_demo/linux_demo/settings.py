@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'books',
     'clac',
     'learn',
-    'templates_demo'
+    'templates_demo',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'linux_demo.context_processor.settings',
+                'linux_demo.context_processor.ip_address'
             ],
         },
     },
